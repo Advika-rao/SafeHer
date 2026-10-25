@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>SafeHer — Women's Personal Safety</title>
+    <meta name="description" content="A modern, privacy-focused women's personal safety mobile app with discreet disguise, emergency escalation, and offline emergency support." />
+    <meta property="og:title" content="SafeHer — Women's Personal Safety" />
+    <meta property="og:description" content="A modern, privacy-focused women's personal safety mobile app with discreet disguise, emergency escalation, and offline emergency support." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully catch Vite HMR WebSocket connection errors in sandbox iframe environment
+      window.addEventListener('unhandledrejection', function(event) {
+        var msg = (event && event.reason && (event.reason.message || event.reason.toString())) || '';
+        if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('vite:ws') !== -1) {
+          event.preventDefault();
+          if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = (event && (event.message || '')) || '';
+        if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('vite:ws') !== -1) {
+          event.preventDefault();
+          if (typeof event.stopImmediatePropagation === 'function') event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-100 text-slate-900 antialiased selection:bg-rose-100 selection:text-rose-900">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

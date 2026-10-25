@@ -1,0 +1,11 @@
+{
+  "name": "Remix Remix Remix SafeHer",
+  "description": "A modern, privacy-focused women\u0027s personal safety app with discreet tools, journey tracking, emergency escalation, and offline emergency support.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
